@@ -1,0 +1,63 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Product Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        @ViewData["Title"]
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-4">
+                Product Id
+            </dt>
+            <dd class="col-sm-8">
+                @Model.Id
+            </dd>
+            <dt class="col-sm-4">
+                Product Name
+            </dt>
+            <dd class="col-sm-8">
+                @Model.Name
+            </dd>
+            <dt class="col-sm-4">
+                Description
+            </dt>
+            <dd class="col-sm-8">
+                @Model.Description
+            </dd>
+            <dt class="col-sm-4">
+                PurchasePrice
+            </dt>
+            <dd class="col-sm-8">
+                @Model.PurchasePrice
+            </dd>
+            <dt class="col-sm-4">
+                Sale Price
+            </dt>
+            <dd class="col-sm-8">
+                @Model.SalePrice
+            </dd>
+            <dt class="col-sm-4">
+                Tax
+            </dt>
+            <dd class="col-sm-8">
+                @Model.Tax
+            </dd>
+            <dt class="col-sm-4">
+                Product Stock
+            </dt>
+            <dd class="col-sm-8">
+                @Model.UnitInStock
+            </dd>
+            <dt class="col-sm-4">
+                Created At
+            </dt>
+            <dd class="col-sm-8">
+                @Model.CreatedDate.ToShortDateString()
+            </dd>
+        </dl>
+    </div>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-dark">Go to Products</a>
+</div>

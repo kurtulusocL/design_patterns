@@ -1,0 +1,50 @@
+﻿@model CreateProductCommand
+@{
+    ViewData["Title"] = "Add A New Product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <h4>@ViewData["Title"]</h4>
+        <div class="col-md-10">
+            <form method="post">
+                <div class="row">
+                    <label>Product Name</label>
+                    <input type="text" asp-for="Name" class="form-control" />
+                </div>
+                <div class="row">
+                    <label>Product Description</label>
+                    <input type="text" asp-for="Description" class="form-control" />
+                </div>
+                <div class="row">
+                    <label>Product Purchase Price</label>
+                    <input type="text" asp-for="PurchasePrice" class="form-control" />
+                </div>
+                <div class="row">
+                    <label>Product Sale Price</label>
+                    <input type="text" asp-for="SalePrice" class="form-control" />
+                </div>
+                <div class="row">
+                    <label>Product Tax Percent</label>
+                    <input type="text" asp-for="Tax" class="form-control" />
+                </div>
+                <div class="row">
+                    <label>Unit In Stock</label>
+                    <input type="text" asp-for="UnitInStock" class="form-control" />
+                </div>
+                <hr />
+                <div class="row">
+                    <button type="submit" class="btn btn-outline-primary">Add Product</button>
+                    <a asp-controller="Product" asp-action="Index" class="btn btn-warning btn-sm">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        @if (TempData["error"] != null)
+        {
+            <strong style="color:black">@TempData["error"]</strong>
+        }
+    </div>
+</div>

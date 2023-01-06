@@ -1,0 +1,14 @@
+C:\Users\kurtulusocL\Desktop\CQRSPattern\CQRSPattern.Core\bin\Debug\net6.0\CQRSPattern.Core.deps.json
+C:\Users\kurtulusocL\Desktop\CQRSPattern\CQRSPattern.Core\bin\Debug\net6.0\CQRSPattern.Core.runtimeconfig.json
+C:\Users\kurtulusocL\Desktop\CQRSPattern\CQRSPattern.Core\bin\Debug\net6.0\CQRSPattern.Core.dll
+C:\Users\kurtulusocL\Desktop\CQRSPattern\CQRSPattern.Core\bin\Debug\net6.0\CQRSPattern.Core.pdb
+C:\Users\kurtulusocL\Desktop\CQRSPattern\CQRSPattern.Core\obj\Debug\net6.0\CQRSPattern.Core.csproj.AssemblyReference.cache
+C:\Users\kurtulusocL\Desktop\CQRSPattern\CQRSPattern.Core\obj\Debug\net6.0\CQRSPattern.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kurtulusocL\Desktop\CQRSPattern\CQRSPattern.Core\obj\Debug\net6.0\CQRSPattern.Core.AssemblyInfoInputs.cache
+C:\Users\kurtulusocL\Desktop\CQRSPattern\CQRSPattern.Core\obj\Debug\net6.0\CQRSPattern.Core.AssemblyInfo.cs
+C:\Users\kurtulusocL\Desktop\CQRSPattern\CQRSPattern.Core\obj\Debug\net6.0\CQRSPattern.Core.csproj.CoreCompileInputs.cache
+C:\Users\kurtulusocL\Desktop\CQRSPattern\CQRSPattern.Core\obj\Debug\net6.0\CQRSPattern.Core.dll
+C:\Users\kurtulusocL\Desktop\CQRSPattern\CQRSPattern.Core\obj\Debug\net6.0\refint\CQRSPattern.Core.dll
+C:\Users\kurtulusocL\Desktop\CQRSPattern\CQRSPattern.Core\obj\Debug\net6.0\CQRSPattern.Core.pdb
+C:\Users\kurtulusocL\Desktop\CQRSPattern\CQRSPattern.Core\obj\Debug\net6.0\CQRSPattern.Core.genruntimeconfig.cache
+C:\Users\kurtulusocL\Desktop\CQRSPattern\CQRSPattern.Core\obj\Debug\net6.0\ref\CQRSPattern.Core.dll

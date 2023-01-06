@@ -1,0 +1,33 @@
+﻿@model GetLocationByIdQueryResult
+@{
+    ViewData["Title"] = "Location Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        @ViewData["Title"]
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-4">
+                Location Id
+            </dt>
+            <dd class="col-sm-8">
+                @Model.Id
+            </dd>
+            <dt class="col-sm-4">
+                City
+            </dt>
+            <dd class="col-sm-8">
+                @Model.City
+            </dd>
+            <dt class="col-sm-4">
+                Country
+            </dt>
+            <dd class="col-sm-8">
+                @Model.Country
+            </dd>
+        </dl>
+    </div>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-dark">Go to Locations</a>
+</div>

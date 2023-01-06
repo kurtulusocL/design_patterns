@@ -1,0 +1,42 @@
+﻿@model GetLocationByIdForUpdate
+@{
+    ViewData["Title"] = "Update to Location";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <h4>@ViewData["Title"]</h4>
+        <div class="col-md-10">
+            <form method="post">
+                <div class="row">
+                    <label>City Name</label>
+                    <input type="text" asp-for="City" value="@Model.City" class="form-control" />
+                </div>
+                <div class="row">
+                    <label>Province</label>
+                    <input type="text" asp-for="Province" value="@Model.Province" class="form-control" />
+                </div>
+                <div class="row">
+                    <label>Country</label>
+                    <input type="text" asp-for="Country" value="@Model.Country" class="form-control" />
+                </div>
+                <div class="row">
+                    <label>Continental</label>
+                    <input type="text" asp-for="Continental" value="@Model.Continental" class="form-control" />
+                </div>
+                <hr />
+                <div class="row">
+                    <button type="submit" class="btn btn-outline-primary">Update Location</button>
+                    <a asp-controller="Location" asp-action="Index" class="btn btn-warning btn-sm">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        @if (TempData["error"] != null)
+        {
+            <strong style="color:black">@TempData["error"]</strong>
+        }
+    </div>
+</div>

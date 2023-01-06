@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "Product List";
+}
+
+<div class="container">
+    <div class="row">
+        <h3>@ViewData["Title"]</h3>
+        <a asp-controller="Home" asp-action="Create" class="btn btn-outline-primary btn-sm">+ Add New One</a>
+        <hr />
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Sale Price</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td>@item.Description</td>
+                        <td>@item.SalePrice</td>
+                        <td>@item.UnitInStock</td>
+                        <td>
+                            <a asp-controller="Home" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-outline-info btn-sm">Detail</a>
+                            <a asp-controller="Home" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-success btn-sm">Edit</a>
+                            <a asp-controller="Home" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-danger btn-sm">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="row">
+        @if (TempData["success"] != null)
+        {
+            <strong>@TempData["success"]</strong>
+        }
+        else
+        {
+            <strong>@TempData["error"]</strong>
+        }
+    </div>
+</div>
